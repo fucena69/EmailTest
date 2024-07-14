@@ -14,7 +14,7 @@ class Email extends Controller
 
     try {
      
-        Mail::to($user->email)->send(new WelcomeEmail());
+        Mail::to("cristoffer.massive@gmail.com")->send(new WelcomeEmail());
 
         return response()->json([
             'status' => true,
